@@ -10,10 +10,6 @@ import {ChangeDetectorRef, OnDestroy} from '@angular/core';
 export class SideNavComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
-  // constructor() { }
-
-  // ngOnInit() {
-  // }
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
@@ -25,5 +21,5 @@ export class SideNavComponent implements OnDestroy {
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
-
 }
+
