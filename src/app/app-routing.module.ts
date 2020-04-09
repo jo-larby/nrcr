@@ -4,6 +4,7 @@ import { DashboardComponent } from './screens/dashboard/dashboard.component';
 import { EventsComponent } from './screens/events/events.component';
 import { RaceResultsComponent } from './screens/race-results/race-results.component';
 import { ChampionshipComponent } from './screens/championship/championship.component';
+import { CarsAndSetupComponent } from './screens/cars-and-setup/cars-and-setup.component';
 
     const routes: Routes = [
         {
@@ -17,6 +18,10 @@ import { ChampionshipComponent } from './screens/championship/championship.compo
         {
             path: 'championship',
             component: ChampionshipComponent,  
+        },
+        {
+            path: 'cars-and-setup',
+            component: CarsAndSetupComponent,  
         },
         {
             path: '',
