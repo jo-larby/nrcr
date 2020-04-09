@@ -40,4 +40,4 @@ import { CarsAndSetupComponent } from './screens/cars-and-setup/cars-and-setup.c
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
