@@ -1,18 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { DashboardComponent } from './screens/dashboard/dashboard.component';
-import { EventsComponent } from './screens/events/events.component';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatCardModule } from  '@angular/material';
-import { ChampionshipComponent } from './screens/championship/championship.component';
-import { RaceResultsComponent } from './screens/race-results/race-results.component';
-import { MatInputModule } from '@angular/material/input';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { CarsAndSetupComponent } from './screens/cars-and-setup/cars-and-setup.component';
+import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "./app-routing.module";
+import { DashboardComponent } from "./screens/dashboard/dashboard.component";
+import { EventsComponent } from "./screens/events/events.component";
+import { SideNavComponent } from "./components/side-nav/side-nav.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import {
+  MatToolbarModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatListModule,
+  MatButtonModule,
+  MatCardModule,
+} from "@angular/material";
+import { ChampionshipComponent } from "./screens/championship/championship.component";
+import { RaceResultsComponent } from "./screens/race-results/race-results.component";
+import { MatInputModule } from "@angular/material/input";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { CarsAndSetupComponent } from "./screens/cars-and-setup/cars-and-setup.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +29,7 @@ import { CarsAndSetupComponent } from './screens/cars-and-setup/cars-and-setup.c
     SideNavComponent,
     ChampionshipComponent,
     RaceResultsComponent,
-    CarsAndSetupComponent
+    CarsAndSetupComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +42,9 @@ import { CarsAndSetupComponent } from './screens/cars-and-setup/cars-and-setup.c
     MatIconModule,
     MatInputModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
