@@ -19,6 +19,10 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { CarsAndSetupComponent } from "./screens/cars-and-setup/cars-and-setup.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatVideoModule } from "mat-video";
+import { VideosComponent } from './screens/videos/videos.component';
+import { GalleryComponent } from './screens/gallery/gallery.component';
+import { HallOfFameComponent } from './screens/hall-of-fame/hall-of-fame.component';
+import { FindUsComponent } from './screens/find-us/find-us.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { MatVideoModule } from "mat-video";
     ChampionshipComponent,
     RaceResultsComponent,
     CarsAndSetupComponent,
+    VideosComponent,
+    GalleryComponent,
+    HallOfFameComponent,
+    FindUsComponent,
   ],
   imports: [
     BrowserModule,
