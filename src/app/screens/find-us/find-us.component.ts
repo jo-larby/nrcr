@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-find-us',
-  templateUrl: './find-us.component.html',
-  styleUrls: ['./find-us.component.css']
+  selector: "app-find-us",
+  templateUrl: "./find-us.component.html",
+  styleUrls: ["./find-us.component.scss"],
 })
 export class FindUsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
