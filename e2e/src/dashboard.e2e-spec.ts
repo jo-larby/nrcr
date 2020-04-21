@@ -1,16 +1,21 @@
 import { dashboardPage } from "./dashboard.po";
 import { browser, logging } from "protractor";
 
-describe("dashboard App", () => {
+describe("dashboard page", () => {
   let page: dashboardPage;
 
   beforeEach(() => {
     page = new dashboardPage();
   });
 
-  it("should display welcome message", () => {
+  it("should display page title ", () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual("NRCR app is running!");
+    expect(page.getTitleText()).toEqual("Newcastle RC Car Racers");
+  });
+
+  it("should display announcements title ", () => {
+    page.navigateTo();
+    expect(page.getAnnouncementText()).toEqual("Announcements");
   });
 
   afterEach(async () => {
