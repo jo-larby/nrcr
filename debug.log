@@ -1,3 +1,12 @@
 [0414/190238.244:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\NICHOL~1.ARM\AppData\Local\Temp\scoped_dir1624_188795834\Crashpad: The system cannot find the file specified. (0x2)
 [0415/172220.545:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\JOANNE~1.LAR\AppData\Local\Temp\scoped_dir7128_2126064443\Crashpad: The system cannot find the file specified. (0x2)
+<<<<<<< HEAD
+[0416/174536.012:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\IBUKUN~1.FOL\AppData\Local\Temp\scoped_dir12176_1542836154\Crashpad: The system cannot find the file specified. (0x2)
+=======
 [0416/172252.381:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\NICHOL~1.ARM\AppData\Local\Temp\scoped_dir19028_208456568\Crashpad: The system cannot find the file specified. (0x2)
+>>>>>>> 96643a2632f9f091d42bac91203baf69c6bd7f3f
+[0421/140752.358:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\IBUKUN~1.FOL\AppData\Local\Temp\scoped_dir21236_531879993\Crashpad: The system cannot find the file specified. (0x2)
+[0421/141216.507:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\IBUKUN~1.FOL\AppData\Local\Temp\scoped_dir5544_238107155\Crashpad: The system cannot find the file specified. (0x2)
+[0421/142051.783:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\IBUKUN~1.FOL\AppData\Local\Temp\scoped_dir20192_2142673598\Crashpad: The system cannot find the file specified. (0x2)
+[0421/143704.379:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\IBUKUN~1.FOL\AppData\Local\Temp\scoped_dir19596_1382352637\Crashpad: The system cannot find the file specified. (0x2)
+[0421/150726.857:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\IBUKUN~1.FOL\AppData\Local\Temp\scoped_dir14764_1087653434\Crashpad: The system cannot find the file specified. (0x2)
