@@ -16,7 +16,16 @@
   padding: 20px;
 }
 
-.thumbnail {
-  width: 100%;
+@media screen and (max-width: 1024px) {
+  img.thumbnail {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  img.thumbnail {
+    width: 50%;
+  }
+}
+img.thumbnail {
   height: auto;
 }
