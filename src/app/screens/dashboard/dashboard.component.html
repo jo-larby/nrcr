@@ -3,7 +3,7 @@
     <div fxFlex="60%" fxFlex.lt-sm="100%" background-color: #80ced6;>
       <mat-card>
         <div id="title-text">
-          <h2 class="mat-h2" class="title-text">
+          <h2 class="mat-h2">
             Newcastle RC Car Racers
           </h2>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
@@ -37,11 +37,11 @@
       </mat-card>
     </div>
     <div fxFlex="40%" fxFlex.lt-sm="100%">
-      <div class="logo">
-        <img src="assets/images/BRCA.PNG" class="img" />
-      </div>
-      <mat-video src="assets/videos/4wdRacing.mp4"></mat-video>
       <mat-card>
+        <div class="logo">
+          <img src="assets/images/BRCA.PNG" class="img" />
+        </div>
+        <mat-video src="assets/videos/4wdRacing.mp4"></mat-video>
         <h1 class="mat-h2">
           See our welcome video here
         </h1>
@@ -52,10 +52,10 @@
 
 <div class="container">
   <div fxLayout="row wrap" fxLayoutAlign="start">
-    <div fxFlex="100%" fxFlex.lt-sm="100%">
+    <div fxFlex="50%" fxFlex.lt-sm="100%">
       <mat-card>
         <div id="announcement-header">
-          <h2 class="mat-h2" class="title-text">
+          <h2 class="mat-h2">
             Announcements
           </h2>
           No racing on Monday 7th May - we'll be back the following week (see
@@ -70,27 +70,27 @@
   <div fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="10px grid">
     <div fxFlex="33.3%" fxFlex.lt-sm="100%">
       <mat-card>
-        <h2 class="mat-h2" class="title-text">
+        <h2 class="mat-h2">
           Touring Car Current Series Leaderboard
         </h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <app-touring-car-leaderboard-table></app-touring-car-leaderboard-table>
       </mat-card>
     </div>
     <div fxFlex="33.3%" fxFlex.lt-sm="100%">
       <mat-card>
-        <h2 class="mat-h2" class="title-text">
+        <h2 class="mat-h2">
           Buggy 4wd Current Series Leaderboard
         </h2>
-        Lorem ipsum dolor sit amet, nisi.
+        <app-buggy-leaderboard-four-wd></app-buggy-leaderboard-four-wd>
       </mat-card>
     </div>
 
     <div fxFlex="33.3%" fxFlex.lt-sm="100%">
       <mat-card>
-        <h2 class="mat-h2" class="title-text">
+        <h2 class="mat-h2">
           Buggy 2wd Current Series Leaderboard
         </h2>
-        Lorem ipsum dolor sit amet, nisi.
+        <app-buggy-leaderboard-two-wd></app-buggy-leaderboard-two-wd>
       </mat-card>
     </div>
   </div>

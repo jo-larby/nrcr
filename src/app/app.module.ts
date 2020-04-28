@@ -25,6 +25,9 @@ import { HallOfFameComponent } from "./screens/hall-of-fame/hall-of-fame.compone
 import { FindUsComponent } from "./screens/find-us/find-us.component";
 import { TouringCarLeaderboardTableComponent } from "./components/touring-car-leaderboard-table/touring-car-leaderboard-table.component";
 import { MatTableModule } from "@angular/material/table";
+import { BuggyLeaderboardFourWdComponent } from "./components/buggy-leaderboard-four-wd/buggy-leaderboard-four-wd.component";
+import { BuggyLeaderboardTwoWdComponent } from "./components/buggy-leaderboard-two-wd/buggy-leaderboard-two-wd.component";
+import { RaceResultsTableComponent } from "./components/race-results-table/race-results-table.component";
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { MatTableModule } from "@angular/material/table";
     HallOfFameComponent,
     FindUsComponent,
     TouringCarLeaderboardTableComponent,
+    BuggyLeaderboardFourWdComponent,
+    BuggyLeaderboardTwoWdComponent,
+    RaceResultsTableComponent,
   ],
   imports: [
     BrowserModule,

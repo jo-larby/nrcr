@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "app-touring-car-leaderboard-table",
-  templateUrl: "./touring-car-leaderboard-table.component.html",
-  styleUrls: ["./touring-car-leaderboard-table.component.scss"],
+  selector: "app-buggy-leaderboard-four-wd",
+  templateUrl: "./buggy-leaderboard-four-wd.component.html",
+  styleUrls: ["./buggy-leaderboard-four-wd.component.scss"],
 })
-export class TouringCarLeaderboardTableComponent {
+export class BuggyLeaderboardFourWdComponent {
   displayedColumns: string[] = ["position", "name", "points", "races"];
   dataSource = ELEMENT_DATA;
 }

@@ -1,0 +1,30 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="seasons">
+    <mat-header-cell *matHeaderCellDef> Seasons </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <mat-icon>looks_one</mat-icon>{{ element.seasons }}
+    </mat-cell>
+  </ng-container>
+
+  <!-- Touring Cars Column -->
+  <ng-container matColumnDef="touringCars">
+    <mat-header-cell *matHeaderCellDef> Touring Cars </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.touringCars }} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="fourwdbuggies">
+    <mat-header-cell *matHeaderCellDef> 4wd Buggies </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.fourwdbuggies }} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="twowdbuggies">
+    <mat-header-cell *matHeaderCellDef> 2wd Buggies </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.twowdbuggies }} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
