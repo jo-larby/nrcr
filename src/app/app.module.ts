@@ -19,10 +19,12 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { CarsAndSetupComponent } from "./screens/cars-and-setup/cars-and-setup.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatVideoModule } from "mat-video";
-import { VideosComponent } from './screens/videos/videos.component';
-import { GalleryComponent } from './screens/gallery/gallery.component';
-import { HallOfFameComponent } from './screens/hall-of-fame/hall-of-fame.component';
-import { FindUsComponent } from './screens/find-us/find-us.component';
+import { VideosComponent } from "./screens/videos/videos.component";
+import { GalleryComponent } from "./screens/gallery/gallery.component";
+import { HallOfFameComponent } from "./screens/hall-of-fame/hall-of-fame.component";
+import { FindUsComponent } from "./screens/find-us/find-us.component";
+import { TouringCarLeaderboardTableComponent } from "./components/touring-car-leaderboard-table/touring-car-leaderboard-table.component";
+import { MatTableModule } from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { FindUsComponent } from './screens/find-us/find-us.component';
     GalleryComponent,
     HallOfFameComponent,
     FindUsComponent,
+    TouringCarLeaderboardTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { FindUsComponent } from './screens/find-us/find-us.component';
     FlexLayoutModule,
     MatCardModule,
     MatVideoModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
