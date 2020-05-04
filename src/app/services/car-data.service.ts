@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { IChampionship } from "../interfaces/championship.interface";
+import { IHallofFame } from "../interfaces/hall-of-fame.interface";
 import { IDashboardFourWd } from "../interfaces/dashboard-fourwd.interface";
 import { IDashboardTwoWd } from "../interfaces/dashboard-twowd.interface";
 import { IDashboardTouringCars } from "../interfaces/dashboard-touring-cars.interface";
@@ -9,13 +9,19 @@ import { IDashboardTouringCars } from "../interfaces/dashboard-touring-cars.inte
 })
 export class CarDataService {
   constructor() {}
-  public getChampionship(): IChampionship[] {
+  public getHallofFame(): IHallofFame[] {
     return [
       {
-        seasons: "Winter",
+        seasons: "Spring 2018",
         touringCars: "Nichola",
         fourwdbuggies: "Jo",
         twowdbuggies: "Russell",
+      },
+      {
+        seasons: "Spring 2018",
+        touringCars: "Adam",
+        fourwdbuggies: "Chris",
+        twowdbuggies: "Will",
       },
     ];
   }

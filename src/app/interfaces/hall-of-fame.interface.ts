@@ -1,4 +1,4 @@
-export interface IChampionship {
+export interface IHallofFame {
   seasons: string;
   touringCars: string;
   fourwdbuggies: string;
