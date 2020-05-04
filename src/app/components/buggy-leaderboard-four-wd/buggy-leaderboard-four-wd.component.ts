@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { CarDataService } from "src/app/services/car-data.service";
+import { IDashboardFourWd } from "src/app/interfaces/dashboard-fourwd.interface";
 
 @Component({
   selector: "app-buggy-leaderboard-four-wd",
@@ -6,20 +8,9 @@ import { Component } from "@angular/core";
   styleUrls: ["./buggy-leaderboard-four-wd.component.scss"],
 })
 export class BuggyLeaderboardFourWdComponent {
+  public dataSource: IDashboardFourWd[];
+  constructor(private carDataService: CarDataService) {
+    this.dataSource = this.carDataService.getDashboardFourWdData();
+  }
   displayedColumns: string[] = ["position", "name", "points", "races"];
-  dataSource = ELEMENT_DATA;
 }
-
-export interface PeriodicElement {
-  position: number;
-  name: string;
-  points: number;
-  races: boolean;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: "Nichola", points: 100, races: true },
-  { position: 2, name: "Jo", points: 75, races: false },
-  { position: 3, name: "Russell", points: 50, races: true },
-  { position: 4, name: "Anthony", points: 10, races: false },
-];

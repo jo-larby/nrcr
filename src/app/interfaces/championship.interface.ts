@@ -1,4 +1,4 @@
-export interface IRaceResult {
+export interface IChampionship {
   seasons: string;
   touringCars: string;
   fourwdbuggies: string;

@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { IDashboardTouringCars } from "src/app/interfaces/dashboard-touring-cars.interface";
+import { CarDataService } from "src/app/services/car-data.service";
 
 @Component({
   selector: "app-touring-car-leaderboard-table",
@@ -6,20 +8,9 @@ import { Component } from "@angular/core";
   styleUrls: ["./touring-car-leaderboard-table.component.scss"],
 })
 export class TouringCarLeaderboardTableComponent {
+  public dataSource: IDashboardTouringCars[];
+  constructor(private carDataService: CarDataService) {
+    this.dataSource = this.carDataService.getDashboardTouringCars();
+  }
   displayedColumns: string[] = ["position", "name", "points", "races"];
-  dataSource = ELEMENT_DATA;
 }
-
-export interface PeriodicElement {
-  position: number;
-  name: string;
-  points: number;
-  races: boolean;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: "Nichola", points: 100, races: true },
-  { position: 2, name: "Jo", points: 75, races: false },
-  { position: 3, name: "Russell", points: 50, races: true },
-  { position: 4, name: "Anthony", points: 10, races: false },
-];

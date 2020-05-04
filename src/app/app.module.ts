@@ -27,7 +27,7 @@ import { TouringCarLeaderboardTableComponent } from "./components/touring-car-le
 import { MatTableModule } from "@angular/material/table";
 import { BuggyLeaderboardFourWdComponent } from "./components/buggy-leaderboard-four-wd/buggy-leaderboard-four-wd.component";
 import { BuggyLeaderboardTwoWdComponent } from "./components/buggy-leaderboard-two-wd/buggy-leaderboard-two-wd.component";
-import { RaceResultsTableComponent } from "./components/race-results-table/race-results-table.component";
+import { ChampionshipTableComponent } from "./components/championship-table/championship-table.component";
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { RaceResultsTableComponent } from "./components/race-results-table/race-
     TouringCarLeaderboardTableComponent,
     BuggyLeaderboardFourWdComponent,
     BuggyLeaderboardTwoWdComponent,
-    RaceResultsTableComponent,
+    ChampionshipTableComponent,
   ],
   imports: [
     BrowserModule,
