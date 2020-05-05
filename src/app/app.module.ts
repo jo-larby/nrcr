@@ -28,6 +28,7 @@ import { MatTableModule } from "@angular/material/table";
 import { BuggyLeaderboardFourWdComponent } from "./components/buggy-leaderboard-four-wd/buggy-leaderboard-four-wd.component";
 import { BuggyLeaderboardTwoWdComponent } from "./components/buggy-leaderboard-two-wd/buggy-leaderboard-two-wd.component";
 import { HallofFameTableComponent } from "./components/hall-of-fame-table/hall-of-fame-table.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { HallofFameTableComponent } from "./components/hall-of-fame-table/hall-o
     MatCardModule,
     MatVideoModule,
     MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

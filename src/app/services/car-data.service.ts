@@ -3,14 +3,16 @@ import { IHallofFame } from "../interfaces/hall-of-fame.interface";
 import { IDashboardFourWd } from "../interfaces/dashboard-fourwd.interface";
 import { IDashboardTwoWd } from "../interfaces/dashboard-twowd.interface";
 import { IDashboardTouringCars } from "../interfaces/dashboard-touring-cars.interface";
+import { Observable, of } from "rxjs";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: "root",
 })
 export class CarDataService {
-  constructor() {}
-  public getHallofFame(): IHallofFame[] {
-    return [
+  constructor(private httpClient: HttpClient) {}
+  public getHallofFame(): Observable<IHallofFame[]> {
+    return of([
       {
         seasons: "Spring 2018",
         touringCars: "Nichola",
@@ -23,39 +25,45 @@ export class CarDataService {
         fourwdbuggies: "Chris",
         twowdbuggies: "Will",
       },
-    ];
+    ]);
   }
 
-  public getDashboardFourWdData(): IDashboardFourWd[] {
-    return [
+  public getDashboardFourWdData(): Observable<IDashboardFourWd[]> {
+    return of([
       {
         position: 1,
         name: "Nichola",
         points: 100,
         races: true,
       },
-    ];
+    ]);
   }
 
-  public getDashboardTwoWdData(): IDashboardTwoWd[] {
-    return [
+  public getDashboardTwoWdData(): Observable<IDashboardTwoWd[]> {
+    return of([
       {
         position: 1,
         name: "Jo",
         points: 70,
         races: false,
       },
-    ];
+    ]);
   }
 
-  public getDashboardTouringCars(): IDashboardTouringCars[] {
-    return [
+  public getDashboardTouringCars(): Observable<IDashboardTouringCars[]> {
+    return of([
       {
         position: 1,
         name: "Russell",
         points: 60,
         races: true,
       },
-    ];
+    ]);
+  }
+
+  public getRaceResults() {
+    return this.httpClient.get(
+      "https://nrcr-backend.azurewebsites.net/api/v1/results"
+    );
   }
 }

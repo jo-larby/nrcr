@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { CarDataService } from "src/app/services/car-data.service";
 import { IDashboardFourWd } from "src/app/interfaces/dashboard-fourwd.interface";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-buggy-leaderboard-four-wd",
@@ -8,9 +9,9 @@ import { IDashboardFourWd } from "src/app/interfaces/dashboard-fourwd.interface"
   styleUrls: ["./buggy-leaderboard-four-wd.component.scss"],
 })
 export class BuggyLeaderboardFourWdComponent {
-  public dataSource: IDashboardFourWd[];
+  public dataSource$: Observable<IDashboardFourWd[]>;
   constructor(private carDataService: CarDataService) {
-    this.dataSource = this.carDataService.getDashboardFourWdData();
+    this.dataSource$ = this.carDataService.getDashboardFourWdData();
   }
   displayedColumns: string[] = ["position", "name", "points", "races"];
 }
