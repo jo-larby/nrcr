@@ -29,6 +29,8 @@ import { BuggyLeaderboardFourWdComponent } from "./components/buggy-leaderboard-
 import { BuggyLeaderboardTwoWdComponent } from "./components/buggy-leaderboard-two-wd/buggy-leaderboard-two-wd.component";
 import { HallofFameTableComponent } from "./components/hall-of-fame-table/hall-of-fame-table.component";
 import { HttpClientModule } from "@angular/common/http";
+import { MatSelectModule } from "@angular/material/select";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -63,6 +65,8 @@ import { HttpClientModule } from "@angular/common/http";
     MatVideoModule,
     MatTableModule,
     HttpClientModule,
+    MatSelectModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

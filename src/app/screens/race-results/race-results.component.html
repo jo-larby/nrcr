@@ -1,1 +1,69 @@
-<p>race results works!</p>
+<div class="container">
+  <mat-card>
+    <div class="container">
+      <div fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="10px grid">
+        <div
+          fxFlex="100"
+          fxFlex.gt-sm="33"
+          fxLayoutAlign="center"
+          class="drop-down"
+        >
+          <mat-form-field>
+            <mat-label>Class (please select)</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let class of classes" [value]="class.value">
+                {{ class.class }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div
+          fxFlex="100"
+          fxFlex.gt-sm="33"
+          class="drop-down"
+          fxLayoutAlign="center"
+        >
+          <mat-form-field>
+            <mat-label>Week (please select)</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let week of weeks" [value]="week.value">
+                {{ week.week }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div
+          fxFlex="100"
+          fxFlex.gt-sm="33"
+          class="drop-down"
+          fxLayoutAlign="center"
+        >
+          <mat-form-field>
+            <mat-label>Race (please select)</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let race of races" [value]="race.value">
+                {{ race.race }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div
+          fxFlex="100"
+          fxFlex.gt-sm="33"
+          class="drop-down"
+          fxLayoutAlign="center"
+        >
+          <mat-form-field>
+            <mat-label>Pick another season (please select)</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let season of seasons" [value]="season.value">
+                {{ season.season }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>
