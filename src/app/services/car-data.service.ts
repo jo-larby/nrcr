@@ -62,8 +62,6 @@ export class CarDataService {
   }
 
   public getRaceResults() {
-    return this.httpClient.get(
-      "https://nrcr-backend.azurewebsites.net/api/v1/results"
-    );
+    return this.httpClient.get("/api/race-results");
   }
 }

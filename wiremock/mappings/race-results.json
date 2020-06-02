@@ -1,0 +1,293 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/race-results"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": [
+      {
+        "_id": "5e8f7d2f094c41413caa8c91",
+        "raceDate": "2018-04-23",
+        "raceClass": "4wd",
+        "raceName": "Race A",
+        "raceLeg": "Heat 1",
+        "raceResultbyDriver": [
+          {
+            "driverName": "Jamie Stewart",
+            "bestQualifyingLaps": 19,
+            "bestQualifyingTime": 304.7,
+            "raceLaps": 20,
+            "raceTime": 301.9,
+            "raceLapTimes": [
+              "15.94",
+              "15.3",
+              "16.81",
+              "14.88",
+              "15.19",
+              "14.95",
+              "17.71",
+              "13.94",
+              "14.17",
+              "14.99",
+              "15.01",
+              "14.31",
+              "15.09",
+              "14.49",
+              "13.81",
+              "15.96",
+              "14.61",
+              "15.07",
+              "15.52",
+              "14.15"
+            ]
+          },
+          {
+            "driverName": "Gary Wilkinson",
+            "bestQualifyingLaps": 21,
+            "bestQualifyingTime": 312.44,
+            "raceLaps": 21,
+            "raceTime": 312.44,
+            "raceLapTimes": [
+              "15.16",
+              "14.45",
+              "14.78",
+              "14.14",
+              "14.84",
+              "14.66",
+              "14.62",
+              "15.03",
+              "14.74",
+              "17.54",
+              "14.57",
+              "14.37",
+              "15.12",
+              "14.65",
+              "14.27",
+              "13.62",
+              "17.15",
+              "14.65",
+              "14.45",
+              "14.14",
+              "15.49"
+            ]
+          },
+          {
+            "driverName": "Dean Henderson",
+            "bestQualifyingLaps": 7,
+            "bestQualifyingTime": 168.72,
+            "raceLaps": 16,
+            "raceTime": 295.64,
+            "raceLapTimes": [
+              "22.19",
+              "17.21",
+              "16.86",
+              "18.34",
+              "18.32",
+              "18.37",
+              "22.04",
+              "16.42",
+              "16.97",
+              "21.63",
+              "18",
+              "17.33",
+              "18.71",
+              "18.71",
+              "16.73",
+              "17.81"
+            ]
+          }
+        ]
+      },
+      {
+        "_id": "5e8f7d59094c41413caa8c92",
+        "raceDate": "2018-04-24",
+        "raceClass": "4wd",
+        "raceName": "Race B",
+        "raceLeg": "Heat 1",
+        "raceResultbyDriver": [
+          {
+            "driverName": "Jamie Stewart",
+            "bestQualifyingLaps": 19,
+            "bestQualifyingTime": 304.7,
+            "raceLaps": 20,
+            "raceTime": 301.9,
+            "raceLapTimes": [
+              "15.94",
+              "15.3",
+              "16.81",
+              "14.88",
+              "15.19",
+              "14.95",
+              "17.71",
+              "13.94",
+              "14.17",
+              "14.99",
+              "15.01",
+              "14.31",
+              "15.09",
+              "14.49",
+              "13.81",
+              "15.96",
+              "14.61",
+              "15.07",
+              "15.52",
+              "14.15"
+            ]
+          },
+          {
+            "driverName": "Gary Wilkinson",
+            "bestQualifyingLaps": 21,
+            "bestQualifyingTime": 312.44,
+            "raceLaps": 21,
+            "raceTime": 312.44,
+            "raceLapTimes": [
+              "15.16",
+              "14.45",
+              "14.78",
+              "14.14",
+              "14.84",
+              "14.66",
+              "14.62",
+              "15.03",
+              "14.74",
+              "17.54",
+              "14.57",
+              "14.37",
+              "15.12",
+              "14.65",
+              "14.27",
+              "13.62",
+              "17.15",
+              "14.65",
+              "14.45",
+              "14.14",
+              "15.49"
+            ]
+          },
+          {
+            "driverName": "Dean Henderson",
+            "bestQualifyingLaps": 7,
+            "bestQualifyingTime": 168.72,
+            "raceLaps": 16,
+            "raceTime": 295.64,
+            "raceLapTimes": [
+              "22.19",
+              "17.21",
+              "16.86",
+              "18.34",
+              "18.32",
+              "18.37",
+              "22.04",
+              "16.42",
+              "16.97",
+              "21.63",
+              "18",
+              "17.33",
+              "18.71",
+              "18.71",
+              "16.73",
+              "17.81"
+            ]
+          }
+        ]
+      },
+      {
+        "_id": "5e8f7d78094c41413caa8c93",
+        "raceDate": "2020-04-23",
+        "raceClass": "4wd",
+        "raceName": "Race C",
+        "raceLeg": "Heat 1",
+        "raceResultbyDriver": [
+          {
+            "driverName": "Jamie Stewart",
+            "bestQualifyingLaps": 19,
+            "bestQualifyingTime": 304.7,
+            "raceLaps": 20,
+            "raceTime": 301.9,
+            "raceLapTimes": [
+              "12.94",
+              "13.3",
+              "16.81",
+              "14.88",
+              "15.19",
+              "14.95",
+              "17.71",
+              "12.94",
+              "14.17",
+              "14.99",
+              "15.01",
+              "14.31",
+              "15.09",
+              "14.49",
+              "13.81",
+              "15.96",
+              "14.61",
+              "15.07",
+              "15.52",
+              "14.15"
+            ]
+          },
+          {
+            "driverName": "Gary Wilkinson",
+            "bestQualifyingLaps": 21,
+            "bestQualifyingTime": 312.44,
+            "raceLaps": 21,
+            "raceTime": 312.44,
+            "raceLapTimes": [
+              "15.16",
+              "14.45",
+              "14.78",
+              "14.14",
+              "14.84",
+              "14.66",
+              "14.62",
+              "15.03",
+              "14.74",
+              "17.54",
+              "14.57",
+              "14.37",
+              "15.12",
+              "14.65",
+              "14.27",
+              "13.62",
+              "17.15",
+              "14.65",
+              "14.45",
+              "14.14",
+              "15.49"
+            ]
+          },
+          {
+            "driverName": "Dean Henderson",
+            "bestQualifyingLaps": 7,
+            "bestQualifyingTime": 168.72,
+            "raceLaps": 16,
+            "raceTime": 295.64,
+            "raceLapTimes": [
+              "22.19",
+              "17.21",
+              "16.86",
+              "18.34",
+              "18.32",
+              "18.37",
+              "22.04",
+              "16.42",
+              "16.97",
+              "21.63",
+              "18",
+              "17.33",
+              "18.71",
+              "18.71",
+              "16.73",
+              "17.81"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

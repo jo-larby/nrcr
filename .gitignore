@@ -47,3 +47,4 @@ Thumbs.db
 
 #temporary
 package-lock.json
+/wiremock/wiremock-standalone*.jar
